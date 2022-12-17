@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* リセットおまじない--------------------------------- */
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #fff;
+	text-align: left;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+
+/* --------------------------------------------------- */
+
+
+#sec2 .serch_flex_area {
+	display: flex;
+    object-fit: cover;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: stretch;
+    background: #cdd803;
+    background-image: url(../img/back.png);
+    border: 5px solid rgb(7, 3, 3);
+    object-fit: cover;
+    width: 100%;
+    /* display: block; */
+    
+
+}
+
+.serch_gazou{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+    border-radius: 10%;
+    object-fit: cover;
+    text-align: center;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50%;
+    height: 100%;
+} 
+
+.big_A{
+    background-image: url(../img/tori.gif);
+    content: "";
+    display: inline-block;
+    /* display: block; */
+    background-size: contain;
+    border-radius: 10px;
+    border: 5px solid rgb(52, 45, 47);
+    width: 450px;
+    height: 450px;
+}
+
+.big_B{
+    background-image: url(../img/taoru.gif);
+    content: "";
+    display: inline-block;
+    /* display: block; */
+    background-size: contain;
+    border-radius: 10px;
+    border: 5px solid rgb(52, 45, 47);
+    width: 450px;
+    height: 450px;
+}
+
+
+
+input[type=radio]+label:before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+input[type=radio]:checked+label::before{
+    border: 5px solid rgb(255, 0, 55);
+    box-sizing: border-box;
+}
+input[type=radio]{
+    display: none;
+} 
+
+
+input[type=radio][value="tori"]+label:before{
+	background-image: url(../img/tori.gif);
+}
+input[type=radio][value="kuma"]+label:before{
+	background-image: url(../img/kuma.gif);
+}
+input[type=radio][value="neko"]+label:before{
+	background-image: url(../img/neko.gif);
+}
+input[type=radio][value="準備中1"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中2"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中3"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中4"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中5"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中6"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+
+
+input[type=radio][value="taoru"]+label:before{
+	background-image: url(../img/taoru.gif);
+}
+input[type=radio][value="yoroi"]+label:before{
+	background-image: url(../img/yoroi.gif);
+}
+input[type=radio][value="fruits"]+label:before{
+	background-image: url(../img/fruits.gif);
+}
+input[type=radio][value="準備中11"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中12"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中13"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中14"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中15"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+input[type=radio][value="準備中16"]+label:before{
+	background-image: url(../img/ゆるキャラ★白書ロゴ.png);
+}
+button{
+    margin: auto;
+}
+
+button img{
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    border: none;
+    padding:0;
+    margin: auto;
+    text-decoration: none;
+    background: #ed3300;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid rgb(52, 45, 47);
+    
+    /* transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+}
+
+button:hover,
+button:focus {
+    background: #ba1600;
+}
+
+button:focus {
+    outline: 0px solid #fff;
+    /* outline-offset: -4px; */
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.pushbt{
+    height: 50%;
+    margin: auto;
+}

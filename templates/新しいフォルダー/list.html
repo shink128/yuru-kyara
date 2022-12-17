@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+ <!-- <a href="/add">タスクを追加</a> -->
+ <!-- テーブル   -->
+<table border="1">
+
+    <!-- {{task}} -->
+    {% for list in task %}
+    <tr>
+        <td>{{list['id']}}</td>
+        <td>{{list['task']}}</td>
+        <td>
+            <button>
+                <a href="/update/{{list['id']}}">編集</a>
+            </button>
+        </td>
+        <td>
+            <button>
+                <a href="/delete/{{list['id']}}">削除</a>
+            </button>
+        </td>
+
+    </tr>
+    <a href="./signin.html">もどる</a>
+    {% endfor %}
+</table>
+<!-- パイソンから渡された情報分だけ繰り返し表示 -->
+<!-- 表を作る -->
+
+
+{% endblock %}

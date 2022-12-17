@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <!--入力フォームをつくる  -->
+    <h1>サインイン</h1>
+
+    <form action="/signin" method="post">
+        <!-- 入力できる場所 -->
+        お名前<input type="text" name="input_name" >
+        パスワード<input type="password" name="input_password" >
+        <input type="submit" value="サインイン">
+    </form>
+
+    
+{% endblock %}
